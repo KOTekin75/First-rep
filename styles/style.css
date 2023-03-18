@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+}
+
+.images {
+    height: 200px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 200ms;
+    font-size: 0;
+}
+
+
+
+h1{
+    font-size: 34px;
+}
+
+
+
+.themeButton{
+    margin-left: 40px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    font-size:15px;
+    padding:6px 12px 6px 12px;
+    border:1px solid black;
+    border-radius:4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    animation: backInDown 1s 1; 
+    text-decoration: none;
+}
+
+.logoImg{
+    width: 60px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
+
+main{
+    background-color: #478eef;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex2{
+    display: flex;
+
+}
+
+.players{
+    background: rgba(0, 0, 0, 0.47);
+    margin-top: 5%;
+    width:50vw;
+    height: 40vh;
+}
+
+.player{
+    height: 30%;
+    background-color: #99BCFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 28px;
+    padding-right: 20px;
+}
+
+.playerImg{
+    height: 100%;
+}
+
+.info{
+    display: flex;
+}
+
+button{
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    font-size:34px;
+    padding:9px 18px 9px 18px;
+    border:1px solid black;
+    border-radius:4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+button:active{
+    box-shadow: none;
+}
+
+footer{
+    padding: 10px 20px 10px 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.fText{
+    font-size: 20px;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.socialImg{
+    width:60px;
+}
+
+/* бургер меню */
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.menu_item{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-right: 40px;
+}
+
+.menu_small_icon {
+    display: none;
+}
+
+.menu-small {
+    display: none;
+    height: 2em;
+}
+
+.menu_small_item {
+    display: none;
+}
+
+.stick {
+    width: 80%;
+    height: 5px;
+    background: #FCD341;
+}
+
+ul{
+    align-items: center;
+    display: flex;
+    list-style: none;
+}
+
+.li {
+    display: inline-block;
+}
+
+/* медиа запросы */
+
+@media (max-width: 700px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-small {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.25);
+        transform: translateX(-100%);
+    }
+
+    .menu_small_item {
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+
+    .menu_small_item:first-child {
+        padding-top: calc(50px + 2em);
+    }
+
+    .menu_small_icon {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        display: flex;
+        z-index: 1;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* светлая тема */
+.lightTheme {
+    background-color: #fff;
+    color: #000;
+}
+
+.lightTheme header{
+    background-color: #FCD341;
+    color: black;
+}
+
+.lightTheme a{
+    color: black;
+}
+
+.lightTheme input{
+    background-color: #fff;
+}
+
+.lightTheme h1{
+    color: black;
+}
+
+.lightTheme footer{
+    background-color: #FCD341;
+    color: black;
+}
+
+.lightTheme button{
+    background-color: #FCD341;
+    color: black;
+}
+
+.lightTheme  button:active{
+    background-color:#dab73c;
+}
+
+.lightTheme .themeButton{
+    background-color: #1f1f1f;
+    color: #FCD341;
+}
+
+
+/* темная тема */
+
+.darkTheme {
+ background-color: #121212;
+}
+
+.darkTheme header{
+ background-color: #1f1f1f;
+ color: #FCD341;
+}
+
+.darkTheme a{
+ color: #FCD341;   
+}
+
+.darkTheme .logo{
+ color: #FCD341;
+}
+
+.darkTheme input{
+ background-color: #FCD341;
+ color: #121212;
+}
+
+.darkTheme h1{
+ color: #FCD341;
+}
+
+.darkTheme footer{
+ background-color: #1f1f1f;
+ color: #FCD341;
+}
+
+.darkTheme button{
+    background-color: #363636;
+    color: #FCD341;
+}
+
+.darkTheme  button:active{
+    background-color:#2b2b2b;
+}
