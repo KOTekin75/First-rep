@@ -172,7 +172,6 @@ footer{
 .stick {
     width: 80%;
     height: 5px;
-    background: #FCD341;
 }
 
 ul{
@@ -199,7 +198,7 @@ ul{
         width: 100%;
         padding: 0;
         position: absolute;
-        background: rgba(0, 0, 0, 0.25);
+        background-color: rgba(0, 0, 0, 0.25);
         transform: translateX(-100%);
     }
 
@@ -208,9 +207,6 @@ ul{
         display: flex;
         justify-content: center;
         align-items: center;
-        text-decoration: none;
-        color: black;
-        font-size: 20px;
     }
 
     .menu_small_item:first-child {
@@ -289,6 +285,10 @@ ul{
     color: #FCD341;
 }
 
+.lightTheme .stick{
+    background-color: #363636;
+}
+
 
 /* темная тема */
 
@@ -330,4 +330,8 @@ ul{
 
 .darkTheme  button:active{
     background-color:#2b2b2b;
+}
+
+.darkTheme .stick{
+    background-color: #FCD341;
 }
